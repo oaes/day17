@@ -1,0 +1,143 @@
+ <!DOCTYPE html>
+ <html>
+     <head>
+     
+        <title>css text reveal</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color:#c0d400;
+        }
+        #upper-text{
+             width: 225px;
+             height: 180px;
+             display: inline-block;
+             font-family: fantasy;
+             font-size: 50px;
+             letter-spacing: 5px;
+             border-bottom: 4px solid black;
+             position: absolute;
+             top: 40%;
+             left: 50%;
+             transform: translate(-50%,-50%);
+             overflow: hidden;
+        }
+         #bottom-text{
+            width: 225px;
+             height: 80px;
+             display: inline-block;
+             font-family: fantasy;
+             font-size: 50px;
+             letter-spacing: 5px;
+             border-bottom: 4px solid black;
+             position: absolute;
+             top: 54%;
+             left: 50%;
+             transform: translate(-50%);
+             overflow: hidden;
+             z-index: -1;
+        }
+        #text-1{
+            position: absolute;
+            top: 200px;
+            animation: animl 1s;
+            animation-fill-mode: forwards;
+            animation-delay: .5s;
+        }
+        #text-2{
+            position: absolute;
+            top: 200px;
+            color: white;
+            animation: anim2 .5s;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+        }
+        #text-3{
+            position: absolute;
+            top: -1oopx;
+            animation: anim3 .6s;
+            animation-fill-mode: forwards;
+            animation-delay: 1.5s;
+        }
+        @keyframes animl{
+            0%{
+                top: 200px;
+            }
+            40%,
+            60%{
+                top: 100px;
+            }
+            100%{
+                top: 30px;
+            }
+        }
+         @keyframes anim2{
+             0%{
+                 top: 200px;
+             }
+             100%{
+                 top: 100px;
+             }
+         }
+         @keyframes anim3{
+             0%{
+                 top: -100px;
+             }
+             100%{
+                 top:20px;
+             }
+         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         }
+    
+    </style> 
+    </head>
+    <body>
+        <div id="upper-text">
+            <div id="text-1">FUTURE</div>
+            <div id="text-2">IS</div>
+        </div>
+        <div id="bottom-text">
+            <div id="text-3">NEAR!</div>
+
+        </div>
+
+
+
+    </body>
+
+
+
+ </html>
